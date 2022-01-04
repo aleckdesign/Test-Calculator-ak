@@ -1,0 +1,41 @@
+@use "abstracts/variables" as *;
+
+.calculator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $clr-white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &__display {
+    min-height: 12rem;
+    word-break: break-all;
+    padding-top: 4rem;
+    padding-right: 2rem;
+    width: 100%;
+    text-align: end;
+    border: none;
+    border-bottom: 2px solid rgba($clr-grey-dark, 0.4);
+  }
+}
+
+.keypad {
+  display: flex;
+  padding: 0 1rem;
+
+  &__numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__operations {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.span-2 {
+  grid-column: span 2;
+}

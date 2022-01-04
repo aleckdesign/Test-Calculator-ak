@@ -1,0 +1,35 @@
+@use "abstracts/variables" as *;
+
+.btn {
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  height: 10rem;
+  width: 10rem;
+
+  &:hover,
+  &:focus {
+    background-color: $clr-grey-light;
+  }
+  &:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-function {
+  color: $clr-grey-dark;
+}
+
+.btn-numeric {
+  color: $clr-black;
+}
+
+.btn-operation {
+  color: $clr-text-blue;
+  font-size: 3.5rem;
+
+  &--2 {
+    color: $clr-text-pink;
+  }
+}

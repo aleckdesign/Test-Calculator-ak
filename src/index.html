@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/sass/file_manifest.scss" />
+
+    <!-- main-2.js Current Script  -->
+    <script defer src="./main-2.js"></script>
+
+  </head>
+  <body>
+    
+    <!-- Calculator -->
+    <main class="calculator">
+      <h1 id="display"  class="calculator__display heading-1" aria-label="calculator display">0</h1>
+      <div id="keypad" class="keypad">
+        <div id="keypad-numbers" class="keypad__numbers">
+          <button id="50"  class="btn btn-function first-tab" aria-label="calculator reset">AC</button>
+          <span id="span-1" class="span-2"
+            ><button id="51"  class="btn btn-function" aria-label="calculator clear">CE</button>
+          </span>
+          <button id="7" class="btn btn-numeric" aria-label="calculator number, 7">7</button>
+          <button id="8" class="btn btn-numeric" aria-label="calculator number, 8">8</button>
+          <button id="9" class="btn btn-numeric" aria-label="calculator number, 9">9</button>
+          <button id="4" class="btn btn-numeric" aria-label="calculator number, 4">4</button>
+          <button id="5" class="btn btn-numeric" aria-label="calculator number, 5">5</button>
+          <button id="6" class="btn btn-numeric" aria-label="calculator number, 6">6</button>
+          <button id="1" class="btn btn-numeric" aria-label="calculator number, 1">1</button>
+          <button id="2" class="btn btn-numeric" aria-label="calculator number, 2">2</button>
+          <button id="3" class="btn btn-numeric" aria-label="calculator number, 3">3</button>
+          <span id="span-2" class="span-2">
+            <button id="0" class="btn btn-numeric" aria-label="calculator number, 0">0</button>
+          </span>
+          <button id="10" class="btn btn-numeric last-tab" aria-label="calculator decimal">.</button>
+        </div>
+
+        <div id="keypad-operations" class="keypad__operations">
+          <button id="20"  class="btn btn-operation first-tab" aria-label="calculator operator, divide">÷</button>
+          <button id="21"  class="btn btn-operation" aria-label="calculator operator, multiply">×</button>
+          <button id="22"  class="btn btn-operation" aria-label="calculator operator, subtract">−</button>
+          <button id="23"  class="btn btn-operation" aria-label="calculator operator, add">+</button>
+          <button id="24"  class="btn btn-operation--2 last-tab" aria-label="calculator operator, equals">=</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+
+<!-- Extra, for keyboard only -->
+    <!-- <label class="label">
+      <input type="checkbox" id="keyboard-only" />
+      Lock keyboard to calculator
+    </label> -->
